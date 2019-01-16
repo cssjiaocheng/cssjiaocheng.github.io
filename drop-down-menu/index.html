@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<title>css下拉菜单</title>
+
+
+	<style>
+		ul {
+			list-style: none;
+		}
+		ul, li {
+			margin: 0;
+			padding: 0;
+
+		}
+
+		.duo-drop-down-menu {
+			width: 600px;
+			height: 2em;
+			line-height: 2em;
+			display: block;
+		}
+
+		.duo-drop-down-menu > .f  { 
+			display: inline-block;
+			position: relative;
+			width: 20%;
+			float: left;
+			text-align: center;
+			background: #99cc33;
+			box-sizing: border-box;
+			border-right: 1px solid red;
+		}
+
+
+	
+		.duo-drop-down-menu > .f ul  {  
+			position: absolute;
+			top: 2em;
+			left: 0;
+			min-width: 100%;
+			background: #219167;
+			display: none;
+		}
+
+		.duo-drop-down-menu > .f:hover ul  { 
+			display: block;
+		}
+
+		.duo-drop-down-menu > .f ul > li.s  { 
+			text-align: center;
+		}  
+
+
+		.block {
+			width: 600px;
+			height: 300px;
+			background: #0080ff;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<ul class='duo-drop-down-menu'>
+		<li class="f"><a href="">f1</a></li>
+
+		<li class="f"><a href="">f2</a>
+			<ul>
+				<li class="s"><a href="">s1</a></li>
+				<li class="s"><a href="">s2</a></li>
+				<li class="s"><a href="">s3</a></li>
+			</ul>
+		</li>
+
+		<li class="f"><a href="">f3</a></li>
+
+		<li class="f"><a href="">f4</a>
+			<ul>
+				<li class="s"><a href="">s1</a></li>
+				<li class="s"><a href="">s3</a></li>
+			</ul>
+		</li>
+
+		<li class="f"><a href="">f5</a></li>
+	</ul>
+	<div class="block"></div>
+
+
+</body>
+</html>
+
+
